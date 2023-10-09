@@ -1,14 +1,26 @@
 import "./App.css";
-import ProductList from "./components/List";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainLayout from "./components/MainLayout";
+import Home from "./views/Home";
+import About from "./views/About";
+import Contact from "./views/Contact";
+import ArtistPage from "./views/ArtistPage";
 
-import React, { Component } from "react";
+const router = createBrowserRouter([
+  {
+    path: "",
+    element: <MainLayout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "artist", element: <ArtistPage /> },
+      { path: "about", element: <About /> },
+      { path: "contact", element: <Contact /> },
+    ],
+  },
+]);
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="container mx-auto my-5">
-        <ProductList />
-      </div>
-    );
-  }
+function App() {
+  return <RouterProvider router={router} />;
 }
+
+export default App;

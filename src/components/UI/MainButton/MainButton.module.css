@@ -1,0 +1,9 @@
+.mBtn {
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+.mBtn:hover {
+  box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, 0.3);
+  background-color: var(--secondary-color);
+  color: var(--main-color-text);
+}

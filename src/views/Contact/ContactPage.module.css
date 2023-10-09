@@ -1,0 +1,107 @@
+.main {
+  background: url(../../Assets//images/body-img.jpg);
+  color: white;
+}
+
+.mainContact::before {
+  top: -200px;
+  height: 160%;
+  z-index: 1;
+}
+.main::before {
+  top: -150px;
+  z-index: -1;
+  height: 100%;
+}
+.mainContact::before,
+.main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 48%;
+  background: url(../../Assets/images/title-spider.png);
+  background-repeat: no-repeat;
+}
+.mainContact::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  left: 37%;
+  transform: translateX(-50%);
+  bottom: -97px;
+  height: 250%;
+  background: url(../../Assets/images/fox-background-image.png);
+  background-repeat: no-repeat;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s linear;
+}
+.brandLink:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color-text);
+  border-color: white;
+}
+.ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  justify-content: center;
+}
+.input {
+  margin-bottom: 10px;
+  position: relative;
+  color: #ccc;
+  text-transform: capitalize;
+  resize: none;
+  border: 0.5px solid #fff;
+  font-size: 14px;
+  font-family: "Berkshire Swash";
+  height: 30px;
+  background: transparent;
+  box-shadow: none !important;
+  width: 560px;
+  padding-left: 10px;
+}
+.signUpInput {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.hoverShadow:hover {
+  box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, 0.3);
+  background-color: var(--secondary-color);
+  color: var(--main-color-text);
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .input,
+  .signUpInput {
+    width: 470px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .input,
+  .signUpInput {
+    width: 346px;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .input,
+  .signUpInput {
+    width: 100%;
+  }
+}

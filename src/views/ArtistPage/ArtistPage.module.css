@@ -1,0 +1,39 @@
+.mainArtist {
+  background: url(../../Assets//images/body-img.jpg);
+  height: 80vh;
+  padding-top: 86px;
+}
+.mainArtist::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  left: 48%;
+  top: -100px;
+  height: 100%;
+  background: url(../../Assets/images/title-spider.png);
+  background-repeat: no-repeat;
+}
+.mainArtist::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: -56px;
+  right: 0;
+  top: -10px;
+  height: 100%;
+  background: url(../../Assets/images/about-spider-wev-image.png);
+  background-repeat: no-repeat;
+}
+
+.sImage {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  left: 54%;
+  top: -440px;
+  height: 320%;
+  background: url(../../Assets/images/Skull.jpg);
+  background-repeat: no-repeat;
+}

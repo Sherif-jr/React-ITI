@@ -1,0 +1,23 @@
+.brandLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s linear;
+}
+.brandLink:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color-text);
+  border-color: white;
+}
+.ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}

@@ -1,0 +1,59 @@
+.navbar {
+  font-family: "Berkshire Swash", cursive;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .navItem::before,
+  .activeLink::before {
+    content: "";
+    position: absolute;
+    z-index: -9;
+    width: 117%;
+    left: -5px;
+    right: 0;
+    top: -24px;
+    background: #552f4d;
+    height: 0;
+    opacity: 0.7;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
+    transition: ease all 0.5s;
+  }
+  .activeLink::before {
+    height: 83px;
+  }
+  .navItem:hover::before {
+    height: 83px;
+  }
+  .navItem::after {
+    height: 0;
+  }
+  .navItem:hover::after,
+  .activeLink::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 117%;
+    left: -5px;
+    right: 0;
+    top: -20px;
+    height: 3px;
+    background: #613157;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
+    transition: ease all 0.5s;
+  }
+}
+@media (max-width: 768px) {
+  ul :last-child {
+    margin-bottom: 10px;
+  }
+  .navbar {
+    padding-bottom: 10px;
+  }
+}
+.activeLink {
+}
